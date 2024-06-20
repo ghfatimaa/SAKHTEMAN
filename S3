@@ -1,0 +1,5 @@
+def get_element(self, index):
+    if index < 0 or index >= self.num:
+        raise Exception("Invalid index")
+    
+    return self.Q[(self.first + index) % self.max_size]
